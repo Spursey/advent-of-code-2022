@@ -1,18 +1,24 @@
+require 'time'
+
+INPUT_FILE_PATH = 'input/input.txt'
+
+start_time = Time.now
+
 depths = []
 
-File.open('input/input.txt', 'r') do |f|
+File.open(INPUT_FILE_PATH, 'r') do |f|
   f.each_line do |line|
     depths << line.to_i
   end
 end
 
-previous_depth = 0
+previous_depth = nil
 current_depth = 0
 
 depth_increases = 0
 
 depths.each do |depth|
-  if depths.first == depth
+  unless previous_depth
     previous_depth = depth
     next
   end
@@ -25,5 +31,9 @@ depths.each do |depth|
   previous_depth = current_depth
   current_depth = 0
 end
+
+end_time = Time.now
+
+print "Finished in #{end_time - start_time} seconds.\n"
 
 print depth_increases
