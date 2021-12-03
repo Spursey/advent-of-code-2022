@@ -6,7 +6,6 @@ start_time = Time.now
 
 inputs = []
 
-
 File.readlines(INPUT_FILE_PATH).each do |line|
   inputs << line.to_i
 end
