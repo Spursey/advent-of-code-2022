@@ -34,9 +34,7 @@ depths.each do |depth|
   end
 
   current_depth = depth
-  if current_depth > previous_depth
-    depth_increases += 1
-  end
+  depth_increases += 1 unless current_depth < previous_depth
 
   previous_depth = current_depth
   current_depth = 0

@@ -22,19 +22,17 @@ end
 
 prev_sum = 0
 cur_sum = 0
+
 counter = 0
-cur_measurements = []
 meas_increases = 0
 
-inputs.each_with_index do |meas, index|
-
+inputs.each_with_index do
   next unless inputs[counter + 3]
+
   prev_sum = inputs[counter] + inputs[counter + 1] + inputs[counter + 2]
   cur_sum  = inputs[counter + 1] + inputs[counter + 2] + inputs[counter + 3]
 
-  if prev_sum < cur_sum
-    meas_increases += 1
-  end
+  meas_increases += 1 if prev_sum < cur_sum
 
   prev_sum = 0
   cur_sum  = 0
