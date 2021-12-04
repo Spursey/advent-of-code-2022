@@ -1,3 +1,13 @@
+# frozen_string_literal: true
+
+# Three Measurement Sliding Window: Count the number of times
+# the sum of measurements in the three measurement sliding window increases
+
+# Input: List of provided measurements
+
+# Output: Number of times the current three-measurement group
+# increased compared to the previous
+
 require 'time'
 
 INPUT_FILE_PATH = 'input/input.txt'

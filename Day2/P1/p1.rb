@@ -1,3 +1,12 @@
+# frozen_string_literal: true
+
+# Dive!: Determine Depth and Horizontal Position of a submarine
+# given a list of commands
+
+# Input: List of provided commands
+
+# Output: Product of the Depth and Horizontal Position of the submarine
+
 require 'time'
 
 INPUT_FILE = 'input/input.txt'

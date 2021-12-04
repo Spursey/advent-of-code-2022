@@ -1,3 +1,13 @@
+# frozen_string_literal: true
+
+# Sonar Sweep: Determine the number of times
+# the depth increases from one depth to the NEXT
+
+# Input: List of provided depths
+
+# Output: Quantity of depth measurement increases
+# when current depth is compared to the previous depth
+
 require 'time'
 
 INPUT_FILE_PATH = 'input/input.txt'

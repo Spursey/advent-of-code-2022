@@ -1,3 +1,13 @@
+# frozen_string_literal: true
+
+# Dive! Part Duece: Determine Depth, Aim and Horizontal Position of a submarine
+# given a list of commands which have changed to include depth in the 'forward'
+# command, and only aim in the 'up' and 'down' commands
+
+# Input: List of provided commands
+
+# Output: Product of the Depth and Horizontal Position of the submarine
+
 require 'time'
 
 INPUT_FILE = 'input/input.txt'
