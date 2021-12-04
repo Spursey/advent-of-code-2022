@@ -12,7 +12,6 @@ horizontal_pos = 0
 depth = 0
 aim = 0
 
-
 File.foreach(INPUT_FILE) do |line|
   movement, value = line.split(' ')
   case movement
@@ -26,7 +25,6 @@ File.foreach(INPUT_FILE) do |line|
   else
     'suck it'
   end
-
 end
 
 end_time = Time.now
