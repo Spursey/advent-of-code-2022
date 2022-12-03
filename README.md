@@ -1,4 +1,4 @@
-# AdventOfCode2022
+# Advent Of Code 2022
 Solutions to Advent of Code 2022 Challenges
 
 # What is Advent of Code?
