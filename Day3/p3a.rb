@@ -34,5 +34,4 @@ total_priority = 0
   end
 end
 
-
 puts total_priority
