@@ -8,7 +8,7 @@ calorie_data = calories_file.readlines.map(&:chomp)
 current_total_calories = 0
 total_calories_per_elf = []
 
-calorie_data.each_with_index do |calorie|
+calorie_data.each do |calorie|
   unless calorie.empty?
     current_total_calories += calorie.to_i
   else
