@@ -14,7 +14,7 @@ File.foreach(INPUT_FILE) do |line|
   first_compartment.each_char.each do |char|
     second_compartment.each_char.each do |char2|
       if char == char2 && !shared_characters[rucksack_count].include?(char2)
-        shared_characters[rucksack_count] << char2
+        shared_characters[rucksack_count] = char2
       end
     end
   end
@@ -27,10 +27,10 @@ total_priority = 0
 (0..rucksack_count).each do |counter|
   next if shared_characters[counter].nil?
 
-  if shared_characters[counter].first == shared_characters[counter].first.downcase
-    total_priority += (shared_characters[counter].first.ord - 96)
+  if shared_characters[counter] == shared_characters[counter].downcase
+    total_priority += (shared_characters[counter].ord - 96)
   else
-    total_priority += (shared_characters[counter].first.ord - 38)
+    total_priority += (shared_characters[counter].ord - 38)
   end
 end
 
