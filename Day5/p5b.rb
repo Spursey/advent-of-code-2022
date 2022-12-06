@@ -60,7 +60,7 @@ end
 final_crate_string = ''
 
 adjusted_table.each do |row|
-  final_crate_string += "#{row.last}"
+  final_crate_string += row.last
 end
 
 puts final_crate_string
