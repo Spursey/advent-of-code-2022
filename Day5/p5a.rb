@@ -33,9 +33,9 @@ File.foreach(INPUT_FILE) do |line|
 
     moving_directions[directions_count] = {}
 
-     moving_directions[directions_count]['quantity_to_move'] = line.split(' from ')[0].split(' ').last.to_i
-     moving_directions[directions_count]['from_position']    = line.split(' from ')[1].split(' ').first.to_i
-     moving_directions[directions_count]['to_position']      = line.split(' from ')[1].split(' ').last.to_i
+    moving_directions[directions_count]['quantity_to_move'] = line.split(' from ')[0].split(' ').last.to_i
+    moving_directions[directions_count]['from_position']    = line.split(' from ')[1].split(' ').first.to_i
+    moving_directions[directions_count]['to_position']      = line.split(' from ')[1].split(' ').last.to_i
     
     directions_count += 1
   end
