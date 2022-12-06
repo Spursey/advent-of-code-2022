@@ -27,3 +27,7 @@ https://adventofcode.com/
   * Day 5 - Supply Stacks
     - [Part One: Rearranging Crate Stacks](Day5/p5a.rb)
     - [Part Two: A Fancy Brand New Crane](Day5/p5b.rb)
+
+  * Day 6 - Tuning Trouble
+    - [Part One: Start-of-Packet Markers](Day5/p6a.rb)
+    - [Part Two: Start-of-Message Markers](Day5/p6b.rb)
