@@ -29,5 +29,9 @@ https://adventofcode.com/
     - [Part Two: A Fancy Brand New Crane](Day5/p5b.rb)
 
   * Day 6 - Tuning Trouble
-    - [Part One: Start-of-Packet Markers](Day5/p6a.rb)
-    - [Part Two: Start-of-Message Markers](Day5/p6b.rb)
+    - [Part One: Start-of-Packet Markers](Day6/p6a.rb)
+    - [Part Two: Start-of-Message Markers](Day6/p6b.rb)
+
+  * Day 7 - No Space Left on Device
+    - [Part One: Finding Directory Sizes](Day7/p7a.rb)
+    - [Part Two: Download More Storage](Day7/p7b.rb)

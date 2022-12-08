@@ -3,6 +3,8 @@
 INPUT_FILE = 'input.txt'
 
 MAX_FILE_SIZE = 100000
+TOTAL_DISK_SPACE = 70000000
+UNUSED_SPACE_REQUIRED = 30000000
 
 current_dir = nil
 directory_tree = []
@@ -52,9 +54,18 @@ File.foreach(INPUT_FILE) do |line|
   end
 end
 
-total = 0
+freed_space = 0
+directories_to_consider = []
+
+space_available = TOTAL_DISK_SPACE - file_paths['root'][:total_file_size]
+space_needed = UNUSED_SPACE_REQUIRED - space_available
+
 file_paths.each_key do |key|
-  total += file_paths[key][:total_file_size] if file_paths[key][:total_file_size] <= MAX_FILE_SIZE
+  directory_size = file_paths[key][:total_file_size]
+
+  next if directory_size < space_needed
+  
+  directories_to_consider << directory_size
 end
 
-puts total
+puts directories_to_consider.min
