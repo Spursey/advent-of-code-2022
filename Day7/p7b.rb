@@ -54,7 +54,7 @@ File.foreach(INPUT_FILE) do |line|
   end
 end
 
-directories_sizes_to_consider = []
+directory_sizes_to_consider = []
 
 space_available = TOTAL_DISK_SPACE - file_paths['root'][:total_file_size]
 space_needed = UNUSED_SPACE_REQUIRED - space_available
@@ -64,7 +64,7 @@ file_paths.each_key do |key|
 
   next if directory_size < space_needed
 
-  directories_sizes_to_consider << directory_size
+  directory_sizes_to_consider << directory_size
 end
 
-puts directories_sizes_to_consider.min
+puts directory_sizes_to_consider.min
