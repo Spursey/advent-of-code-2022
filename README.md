@@ -35,3 +35,7 @@ https://adventofcode.com/
   * Day 7 - No Space Left on Device
     - [Part One: Finding Directory Sizes](Day7/p7a.rb)
     - [Part Two: Download More Storage](Day7/p7b.rb)
+
+  * Day 8 - Treetop Tree House
+    - [Part One: Evaluating Visibility](Day8/p8a.rb)
+    - [Part Two: Evaluating Scenice Score](Day8/p8b.rb)
