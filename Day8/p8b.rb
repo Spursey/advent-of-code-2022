@@ -2,8 +2,6 @@
 
 INPUT_FILE = 'input.txt'
 
-start_time = Time.now
-
 tree_file = File.open(INPUT_FILE)
 
 tree_map = []
