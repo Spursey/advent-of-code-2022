@@ -39,3 +39,11 @@ https://adventofcode.com/
   * Day 8 - Treetop Tree House
     - [Part One: Evaluating Visibility](Day8/p8a.rb)
     - [Part Two: Evaluating Scenice Score](Day8/p8b.rb)
+
+  * Day 9 - Rope Bridge (Incomplete)
+
+  * Day 10 - Cathode-Ray Tube
+    - [Part One: Determine Signal Strength on Specific Cycles](Day10/p10a.rb)
+    - [Part Two: Render Sprite based on Register Value/Cycles](Day10/p10b.rb)
+
+  * Day 11 - Treetop Tree House (Incomplete)
