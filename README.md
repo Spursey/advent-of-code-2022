@@ -46,4 +46,6 @@ https://adventofcode.com/
     - [Part One: Determine Signal Strength on Specific Cycles](Day10/p10a.rb)
     - [Part Two: Render Sprite based on Register Value/Cycles](Day10/p10b.rb)
 
-  * Day 11 - Treetop Tree House (Incomplete)
+  * Day 11 - Monkey in the Middle
+    - [Part One: Item-Policing the Animals](Day11/p11a.rb)
+    - [Part Two: Not Caring About Our Stuff Anymore](Day11/p11b.rb)
